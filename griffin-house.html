@@ -1,0 +1,73 @@
+<!doctype HTML>
+<html lang ="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Mobile App Development</title>
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css"/>
+	<link rel="stylesheet" href="themes/zdcolour.min.css"/>
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css"/>
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="scripts/config.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+	<script src="scripts/addproperty.js"></script>
+	<script src="scripts/getproperty.js"></script>
+	<script src="scripts/deleteproperty.js"></script>
+	<script src="scripts/validatecheckbox.js"></script>
+	<script src="scripts/swipeevent.js"></script>
+</head>
+<body>
+	<div data-role="page" id="griffin">
+		<div data-role="header">
+			<div data-role="panel" id="navpanel" data-display="overlay" data-position-fixed="true" data-position="right">
+				<div id="navcontainer">
+					<ul>
+						<li><a href="register.html">Register</a>
+						<li><a href="#login">Login</a></li>
+						<li><a href="interests.html">My Interests</a></li>
+					</ul>
+				</div>
+			</div>
+			<a href="" data-rel="back" data-icon="arrow-l" data-transition="slidefade" data-direction="reverse">Back</a>
+			<a href="#navpanel" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>
+			<h1>Zedland Houses</h1>
+		</div>
+		<div data-role="content">
+			<h2 id="propertytitle">Griffin House</h2>
+			<img src="images/studio2.jpg" alt="Griffin-House.jpg" height="200" width="267">	
+			<br><br>	
+			<!--I used this to help me for collapsible sets: https://demos.jquerymobile.com/1.4.5/collapsibleset/-->
+			<div data-role="collapsibleset">
+				<div data-role="collapsible">
+					<h4>Details of the property</h4>
+					A spacious studio apartment, purpose built studio apartment with a separate kitchen and
+					bathroom benefitting from dual aspect views and a flood of natural light.
+					<ul>
+						<li>Studio apartment</li>
+						<li>Exceptional storage</li>
+						<li>Easy access to transport services</li>
+						<li>£750/month</li>
+					</ul>
+				</div>
+			</div>
+			<a href="#" data-role="button">Reserve</a>
+			<a href="#addedmessage" data-rel="popup" data-transition="pop" data-position-to="window" class="ui-btn ui-btn-corner-all ui-icon-star ui-btn-icon-left" id="addbtn">Add to interest list</a>
+			<div data-role="popup" id="addedmessage">
+				<p>This property has been added to your interests</p>
+			</div>
+			<div id="nostorage"></div>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-id="footernav">
+				<ul>
+					<li><a href="index.html" data-prefetch>Home</a></li>
+					<li><a href="#login" data-prefetch>Login</a></li>
+					<li><a href="about.html" rel="external" data-prefetch>About us</a></li>
+					<li><a href="contact.html" rel="external"data-prefetch>Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>

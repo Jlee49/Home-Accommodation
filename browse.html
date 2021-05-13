@@ -1,0 +1,103 @@
+<!doctype HTML>
+<html lang ="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Mobile App Development</title>
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css"/>
+	<link rel="stylesheet" href="themes/zdcolour.min.css"/>
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css"/>
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="scripts/config.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+	<script src="scripts/addproperty.js"></script>
+	<script src="scripts/getproperty.js"></script>
+	<script src="scripts/deleteproperty.js"></script>
+	<script src="scripts/validatecheckbox.js"></script>
+	<script src="scripts/swipeevent.js"></script>
+</head>
+<body>
+	<div data-role="page" id="browse">
+		<div data-role="header">
+			<div data-role="panel" id="navpanel10" data-display="overlay" data-position-fixed="true" data-position="right">
+				<div id="navcontainer10">
+					<ul>
+						<li><a href="register.html">Register</a></li>
+						<li><a href="#login">Login</a></li>
+						<li><a href="interests.html">My Interests</a></li>
+					</ul>
+				</div>
+			</div>
+			<a href="index.html" rel="external" data-rel="back" data-icon="arrow-l" data-transition="slidefade" data-direction="reverse">Back</a>
+			<a href="#navpanel10" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>
+			<h1>Zedland Houses</h1>
+		</div>
+		<div data-role="content">
+			<ul data-role="listview" data-filter="true" data-inset="true" data-filter-placeholder="Search For Houses">
+				<li><a href="churchill-house.html"  rel="external" data-transition="slidefade">Churchill House</a></li>
+				<li><a href="fleming-house.html" rel="external" data-transition="slidefade">Fleming House</a></li>
+				<li><a href="hoffman-house.html" data-transition="slidefade">Hoffman House</a></li>
+				<li><a href="hamilton-house.html" data-transition="slidefade">Hamilton House</a></li>
+				<li><a href="bryne-house.html" rel="external" data-transition="slidefade">Bryne House</a></li>
+				<li><a href="griffin-house.html" rel="external" data-transition="slidefade">Griffin House</a></li>
+				<li><a href="estrada-house.html" rel="external" data-transition="slidefade">Estrada House</a></li>
+				<li><a href="chambers-house.html" rel="external" data-transition="slidefade">Chambers House</a></li>	
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-id="footernav">
+				<ul>
+					<li><a href="index.html" data-prefetch>Home</a></li>
+					<li><a href="#login" data-prefetch>Login</a></li>
+					<li><a href="about.html" rel="external" data-prefetch>About us</a></li>
+					<li><a href="contact.html" rel="external"data-prefetch>Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div data-role="page" id="login">
+		<div data-role="header">
+			<div data-role="panel" id="navpanel2" data-display="overlay" data-position-fixed="true" data-position="right">
+				<div id="navcontainer2">
+					<ul>
+						<li><a href="register.html">Register</a></li>
+						<li><a href="#login">Login</a></li>
+						<li><a href="interests.html">My Interests</a></li>
+					</ul>
+				</div>
+			</div>
+			<a href="" rel="external" data-rel="back" data-icon="arrow-l" data-transition="slidefade" data-direction="reverse">Back</a>
+			<a href="#navpanel2" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>
+			<h1>Zedland Houses</a></h1>
+		</div>
+		<div data-role="content">
+			<h2>Login</h2>
+			<form action="browse.html" rel="external" method="post" id="loginform2">
+				<div data-role="ui-field-contain">
+					<label for="studentno">Student No:</label>
+					<input type="number" id="studentno" data-mini="true" required>
+				</div>
+				<div data-role="ui-field-contain">
+				<label for="pass">Password:</label>
+				<input type="password" id="pass" name="pass"><br>
+				</div>
+				<div data-role="ui-field-contain">
+					<input type="submit" value="Log In">
+				</div>
+				<a href="register.html">Don't have an account? Sign up now!</a>
+			</form>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-id="footernav">
+				<ul>
+					<li><a href="index.html" data-prefetch>Home</a></li>
+					<li><a href="" class="ui-state-persist ui-btn-active" data-prefetch>Login</a></li>
+					<li><a href="about.html" rel="external" data-prefetch>About us</a></li>
+					<li><a href="contact.html" rel="external" data-prefetch>Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>

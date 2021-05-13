@@ -1,0 +1,86 @@
+<!doctype HTML>
+<html lang ="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Mobile App Development</title>
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css"/>
+	<link rel="stylesheet" href="themes/zdcolour.min.css"/>
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css"/>
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="scripts/config.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+	<script src="scripts/addproperty.js"></script>
+	<script src="scripts/getproperty.js"></script>
+	<script src="scripts/deleteproperty.js"></script>
+	<script src="scripts/validatecheckbox.js"></script>
+	<script src="scripts/swipeevent.js"></script>
+</head>
+<body>
+	<div data-role="page" id="churchill">
+		<div data-role="header">
+			<div data-role="panel" id="navpanel2" data-display="overlay" data-position-fixed="true" data-position="right">
+				<div id="navcontainer2">
+					<ul>
+						<li><a href="register.html">Register</a>
+						<li><a href="#login">Login</a></li>
+						<li><a href="interests.html">My Interests</a></li>
+					</ul>
+				</div>
+			</div>
+			<a href="" data-rel="back" data-icon="arrow-l" data-transition="slidefade" data-direction="reverse">Back</a>
+			<a href="#navpanel2" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>
+			<h1>Zedland Houses</h1>
+		</div>
+		<div data-role="content">
+			<h2 id="propertytitle">Churchill House</h2>
+			<div id="imgLink">
+				<a href="#popup" data-rel="popup" data-position-to="window" data-transition="fade">
+					<img class="popupphoto" src="images/house1.jpg" id="churchillphoto" alt="churchill-house.jpg" height="200" width="330">
+				</a>
+				<div data-role="popup" id="popup" data-overlay-theme="a" data-corners="false">
+					<a href="#" id="back" class="back invisible ui-btn ui-btn-icon-notext ui-icon-carat-l">Previous</a>
+					<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" 	class="ui-btn-right">Close</a>
+					<img id="photo1" src="images/house1.jpg" alt="churchill-house.jpg">
+					<a href="#" id="next" class="next ui-btn ui-btn-icon-notext ui-icon-carat-r">Next</a>
+				</div>
+			</div>
+			<br><br>
+			<!--I used this to help me for collapsible sets: https://demos.jquerymobile.com/1.4.5/collapsibleset/-->
+			<div data-role="collapsibleset">
+				<div data-role="collapsible">
+					<h4>Details of the property</h4>
+					<p>An immensely spacious four bedroom, two bathroom apartment,
+					which has been meticulously refurbished to an exacting standard 
+					and is conveniently positioned close to local amenities.</p>
+					<ul>
+						<li>4 Bedrooms</li>
+						<li>2 bathrooms</li>
+						<li>Master bed with en-suite</li>
+						<li>Stunning Kitchen/Diner</li>
+						<li>Parking lot</li>
+						<li>Private garden</li>
+					</ul>
+				</div>
+			</div>
+			<a href="#" data-role="button" data-position-to="left">Reserve</a>
+			<a href="#addedmessage" data-rel="popup" data-transition="pop" data-position-to="window" class="ui-btn ui-btn-corner-all ui-icon-star ui-btn-icon-left" id="addbtn"></a>
+			<div data-role="popup" id="addedmessage">
+				<p>This property has been added to your interests</p>
+			</div>
+			<div id="nostorage"></div>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-id="footernav">
+				<ul>
+					<li><a href="index.html" data-prefetch>Home</a></li>
+					<li><a href="#login" data-prefetch>Login</a></li>
+					<li><a href="about.html" rel="external" data-prefetch>About us</a></li>
+					<li><a href="contact.html" rel="external"data-prefetch>Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
